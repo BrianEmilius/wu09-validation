@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.status {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<form class="contactForm" novalidate>
+		<div class="formInput">
+			<label>
+				Fornavn *
+				<input type="text" name="fornavn" required>
+			</label>
+			<span class="status"></span>
+		</div>
+		<div class="formInput">
+			<label>
+				Efternavn *
+				<input type="text" name="efternavn" required>
+			</label>
+			<span class="status"></span>
+		</div>
+		<div class="formInput">
+			<label>
+				E-mail *
+				<input type="email" name="email" required>
+			</label>
+			<span class="status"></span>
+		</div>
+		<div class="formInput">
+			<label>
+				Besked *
+				<textarea name="besked"></textarea>
+			</label>
+			<span class="status"></span>
+		</div>
+
+		<button type="submit">Send</button>
+	</form>
+
+	<script src="/app.js"></script>
+</body>
+</html>
